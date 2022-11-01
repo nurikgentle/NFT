@@ -1,0 +1,55 @@
+header {
+  max-width: 1440px;
+  min-width: 350px;
+  height: 100px;
+  // background-color: bisque;
+
+  input {
+    width: 1000px;
+    height: 70px;
+    background: #17191c;
+    border-radius: 100px;
+    color: #c1c1c1;
+    margin-top: 10px;
+    font-size: 18px;
+
+    @media (max-width: 1063px) {
+      width: 700px;
+    }
+
+    @media (max-width: 753px) {
+      width: 680px;
+    }
+    @media (max-width: 725px) {
+      width: 640px;
+    }
+    @media (max-width: 674px) {
+      width: 540px;
+    }
+    @media (max-width: 580px) {
+      width: 500px;
+      height: 60px;
+    }
+    @media (max-width: 539px) {
+      width: 440px;
+      height: 60px;
+    }
+    @media (max-width: 473px) {
+      width: 340px;
+      height: 60px;
+    }
+    @media (max-width: 375px) {
+      width: 320px;
+      height: 60px;
+    }
+
+    &::placeholder {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 16px;
+      color: #c1c1c1;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+}

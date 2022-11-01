@@ -1,0 +1,101 @@
+.page {
+  color: white;
+  // background-color: aqua;
+  max-width: 1440px;
+  min-width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  h2 {
+    color: white;
+    font-size: 35px;
+  }
+  h1 {
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+  }
+  .nft-card {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+
+    .more {
+      font-size: 50px;
+    }
+    .main-info {
+      display: flex;
+      flex-direction: row;
+      gap: 400px;
+
+      @media (max-width: 936px) {
+        flex-direction: column !important;
+      }
+
+      @media (max-width: 1338px) {
+        gap: 300px;
+      }
+      @media (max-width: 1240px) {
+        gap: 200px;
+      }
+      @media (max-width: 1140px) {
+        gap: 100px;
+      }
+      @media (max-width: 1040px) {
+        gap: 20px;
+      }
+      .inside-main-info {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 42px;
+      }
+      @media (max-width: 969px) {
+        margin-left: -15px !important;
+      }
+    }
+    .name {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+    .price {
+      display: flex;
+      gap: 10px;
+    }
+    .date {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      @media (max-width: 603px) {
+        flex-direction: column;
+      }
+    }
+    .back {
+      font-size: 50px;
+      color: white;
+      margin-bottom: 100px;
+      margin-top: 100px;
+    }
+  }
+}
+@media (max-width: 840px) {
+  .address {
+    display: none;
+  }
+}
+@media (max-width: 530px) {
+  .other {
+    width: 300px;
+  }
+  .page {
+    text-align: center;
+  }
+}
