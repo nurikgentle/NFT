@@ -60,8 +60,8 @@ const MainPage = () => {
               className="nft"
               style={{ backgroundImage: `url(${item.image_url})` }}
             >
-              <h1>id: {item.id}</h1>
-              <h2>Name: {item.name}</h2>
+              <h1>id: {item.id === null ? 'Отсуствует' : item.id}</h1>
+              <h2>Name: {item.name === null ? 'Отсуствует' : item.name}</h2>
               <Link
                 to={`/nftPage/${item.asset_contract.address}/${item.token_id}`}
               >
