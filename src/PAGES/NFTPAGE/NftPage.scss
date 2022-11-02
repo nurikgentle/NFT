@@ -58,6 +58,9 @@
       @media (max-width: 969px) {
         margin-left: -15px !important;
       }
+      @media (max-width: 480px) {
+        margin-left: -45px !important;
+      }
     }
     .name {
       display: flex;
@@ -65,10 +68,30 @@
       gap: 10px;
       justify-content: center;
       align-items: center;
+
+      @media(max-width: 415px) {
+        gap: 20px;
+      }
+      @media(max-width: 399px) {
+        flex-direction: column;
+      }
+
+      h2 {
+        @media(max-width: 415px) {
+          font-size: 30px !important;
+        }
+        @media(max-width: 415px) {
+          font-size: 40px !important;
+        }
+      }
     }
     .price {
       display: flex;
       gap: 10px;
+
+      @media(max-width: 425px) {
+        flex-direction: column;
+      }
     }
     .date {
       display: flex;
