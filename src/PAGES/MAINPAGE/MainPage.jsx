@@ -42,19 +42,19 @@ const MainPage = () => {
 
   // FILTERING THE DATA FOR INPUT 
   const filteredData = currentNft?.filter((item) => {
-    return search.toLowerCase() === ""
+    return search?.toLowerCase() === ""
       ? item
-      : item.name.toLowerCase().includes(search.toLowerCase());
+      : item?.name?.toLowerCase().includes(search?.toLowerCase());
   });
 
   // CONDITIONAL RENDERING 
   const ShowData = () => {
 
     // SUCCESS 
-    if (!_.isEmpty(data.data)) {
+    if (!_.isEmpty(data?.data)) {
       return (
         <div className="nfts">
-          {filteredData.map((item) => (
+          {filteredData?.map((item) => (
             <div
               key={item.id}
               className="nft"
