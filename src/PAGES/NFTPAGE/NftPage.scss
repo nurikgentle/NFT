@@ -10,11 +10,24 @@
   h2 {
     color: white;
     font-size: 35px;
+    opacity: 0;
+    animation: fadeInAnimation 3s;
   }
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   h1 {
     color: black;
     background-color: white;
     border-radius: 20px;
+    animation: fadeInAnimation 5s;
   }
   .nft-card {
     background-color: aqua;
@@ -24,6 +37,10 @@
     align-items: center;
     background-size: cover;
     background-position: center;
+
+    img {
+      animation: fadeInAnimation 3s;
+    }
 
     .more {
       font-size: 50px;
@@ -122,3 +139,5 @@
     text-align: center;
   }
 }
+
+
