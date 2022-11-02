@@ -10,17 +10,7 @@
   h2 {
     color: white;
     font-size: 35px;
-    opacity: 0;
-    animation: fadeInAnimation 3s;
-  }
-
-  @keyframes fadeInAnimation {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    animation: fadeInAnimation 5s;
   }
 
   h1 {
@@ -140,4 +130,13 @@
   }
 }
 
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
